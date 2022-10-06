@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A4C2E23-C721-4A91-AD67-762A346575B9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>studio</RootNamespace>
+    <AssemblyName>studio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClassicSample\avancecontratous.ascx" />
+    <Content Include="ClassicSample\Reserva.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Styles\CodeTriggerStyle.css" />
+    <Content Include="ClassicSample\AgendaCtrl.ascx" />
+    <Content Include="ClassicSample\CargoLaboralCtrl.ascx" />
+    <Content Include="ClassicSample\CategoriaComponenteCtrl.ascx" />
+    <Content Include="ClassicSample\ClienteCtrl.ascx" />
+    <Content Include="ClassicSample\CobrosCtrl.ascx" />
+    <Content Include="ClassicSample\ComponentePaqueteCtrl.ascx" />
+    <Content Include="ClassicSample\ContratoCtrl.ascx" />
+    <Content Include="ClassicSample\DireccionesCtrl.ascx" />
+    <Content Include="ClassicSample\EmpleadoCtrl.ascx" />
+    <Content Include="ClassicSample\EquipoCtrl.ascx" />
+    <Content Include="ClassicSample\EventoCtrl.ascx" />
+    <Content Include="ClassicSample\FichaDatosCtrl.ascx" />
+    <Content Include="ClassicSample\IncluyePCCtrl.ascx" />
+    <Content Include="ClassicSample\OrdenTrabajoCtrl.ascx" />
+    <Content Include="ClassicSample\PaqueteCtrl.ascx" />
+    <Content Include="ClassicSample\PersonaCtrl.ascx" />
+    <Content Include="ClassicSample\ReservaCtrl.ascx" />
+    <Content Include="ClassicSample\TipoEquipoCtrl.ascx" />
+    <Content Include="ClassicSample\TipoEventoCtrl.ascx" />
+    <Content Include="ClassicSample\UtilizaEECtrl.ascx" />
+    <Content Include="ClassicSample\EmpleadoPersonaCtrl.ascx" />
+    <Content Include="ClassicSample\VerCategoriaComponenteCtrl.ascx" />
+    <Content Include="ClassicSample\MainFrame.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassicSample\avancecontratous.ascx.cs">
+      <DependentUpon>avancecontratous.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\avancecontratous.ascx.designer.cs">
+      <DependentUpon>avancecontratous.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\Reserva.ascx.cs">
+      <DependentUpon>Reserva.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\Reserva.ascx.designer.cs">
+      <DependentUpon>Reserva.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DataObjects\Implementation\DATACONN0_BaseData.cs" />
+    <Compile Include="DataObjects\Implementation\DATACONN0_TxConnectionProvider.cs" />
+    <Compile Include="DataObjects\Implementation\DAOAgenda.cs" />
+    <Compile Include="DataObjects\Implementation\DAOCargoLaboral.cs" />
+    <Compile Include="DataObjects\Implementation\DAOCategoriaComponente.cs" />
+    <Compile Include="DataObjects\Implementation\DAOCliente.cs" />
+    <Compile Include="DataObjects\Implementation\DAOCobros.cs" />
+    <Compile Include="DataObjects\Implementation\DAOComponentePaquete.cs" />
+    <Compile Include="DataObjects\Implementation\DAOContrato.cs" />
+    <Compile Include="DataObjects\Implementation\DAODirecciones.cs" />
+    <Compile Include="DataObjects\Implementation\DAOEmpleado.cs" />
+    <Compile Include="DataObjects\Implementation\DAOEquipo.cs" />
+    <Compile Include="DataObjects\Implementation\DAOEvento.cs" />
+    <Compile Include="DataObjects\Implementation\DAOFichaDatos.cs" />
+    <Compile Include="DataObjects\Implementation\DAOIncluyePC.cs" />
+    <Compile Include="DataObjects\Implementation\DAOOrdenTrabajo.cs" />
+    <Compile Include="DataObjects\Implementation\DAOPaquete.cs" />
+    <Compile Include="DataObjects\Implementation\DAOPersona.cs" />
+    <Compile Include="DataObjects\Implementation\DAOReserva.cs" />
+    <Compile Include="DataObjects\Implementation\DAOTipoEquipo.cs" />
+    <Compile Include="DataObjects\Implementation\DAOTipoEvento.cs" />
+    <Compile Include="DataObjects\Implementation\DAOUtilizaEE.cs" />
+    <Compile Include="DataObjects\Implementation\DAOEmpleadoPersona.cs" />
+    <Compile Include="DataObjects\Implementation\DAOVerCategoriaComponente.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOAgenda.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOCargoLaboral.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOCategoriaComponente.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOCliente.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOCobros.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOComponentePaquete.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOContrato.cs" />
+    <Compile Include="BusinessObjects\Implementation\BODirecciones.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOEmpleado.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOEquipo.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOEvento.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOFichaDatos.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOIncluyePC.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOOrdenTrabajo.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOPaquete.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOPersona.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOReserva.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOTipoEquipo.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOTipoEvento.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOUtilizaEE.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOEmpleadoPersona.cs" />
+    <Compile Include="BusinessObjects\Implementation\BOVerCategoriaComponente.cs" />
+    <Compile Include="BusinessObjects\Implementation\DATACONN0_BaseBusiness.cs" />
+    <Compile Include="ClassicSample\AgendaCtrl.ascx.cs">
+      <DependentUpon>AgendaCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\AgendaCtrl.ascx.designer.cs">
+      <DependentUpon>AgendaCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\CargoLaboralCtrl.ascx.cs">
+      <DependentUpon>CargoLaboralCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\CargoLaboralCtrl.ascx.designer.cs">
+      <DependentUpon>CargoLaboralCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\CategoriaComponenteCtrl.ascx.cs">
+      <DependentUpon>CategoriaComponenteCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\CategoriaComponenteCtrl.ascx.designer.cs">
+      <DependentUpon>CategoriaComponenteCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\ClienteCtrl.ascx.cs">
+      <DependentUpon>ClienteCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\ClienteCtrl.ascx.designer.cs">
+      <DependentUpon>ClienteCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\CobrosCtrl.ascx.cs">
+      <DependentUpon>CobrosCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\CobrosCtrl.ascx.designer.cs">
+      <DependentUpon>CobrosCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\ComponentePaqueteCtrl.ascx.cs">
+      <DependentUpon>ComponentePaqueteCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\ComponentePaqueteCtrl.ascx.designer.cs">
+      <DependentUpon>ComponentePaqueteCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\ContratoCtrl.ascx.cs">
+      <DependentUpon>ContratoCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\ContratoCtrl.ascx.designer.cs">
+      <DependentUpon>ContratoCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\DireccionesCtrl.ascx.cs">
+      <DependentUpon>DireccionesCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\DireccionesCtrl.ascx.designer.cs">
+      <DependentUpon>DireccionesCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\EmpleadoCtrl.ascx.cs">
+      <DependentUpon>EmpleadoCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\EmpleadoCtrl.ascx.designer.cs">
+      <DependentUpon>EmpleadoCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\EquipoCtrl.ascx.cs">
+      <DependentUpon>EquipoCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\EquipoCtrl.ascx.designer.cs">
+      <DependentUpon>EquipoCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\EventoCtrl.ascx.cs">
+      <DependentUpon>EventoCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\EventoCtrl.ascx.designer.cs">
+      <DependentUpon>EventoCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\FichaDatosCtrl.ascx.cs">
+      <DependentUpon>FichaDatosCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\FichaDatosCtrl.ascx.designer.cs">
+      <DependentUpon>FichaDatosCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\IncluyePCCtrl.ascx.cs">
+      <DependentUpon>IncluyePCCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\IncluyePCCtrl.ascx.designer.cs">
+      <DependentUpon>IncluyePCCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\OrdenTrabajoCtrl.ascx.cs">
+      <DependentUpon>OrdenTrabajoCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\OrdenTrabajoCtrl.ascx.designer.cs">
+      <DependentUpon>OrdenTrabajoCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\PaqueteCtrl.ascx.cs">
+      <DependentUpon>PaqueteCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\PaqueteCtrl.ascx.designer.cs">
+      <DependentUpon>PaqueteCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\PersonaCtrl.ascx.cs">
+      <DependentUpon>PersonaCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\PersonaCtrl.ascx.designer.cs">
+      <DependentUpon>PersonaCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\ReservaCtrl.ascx.cs">
+      <DependentUpon>ReservaCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\ReservaCtrl.ascx.designer.cs">
+      <DependentUpon>ReservaCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\TipoEquipoCtrl.ascx.cs">
+      <DependentUpon>TipoEquipoCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\TipoEquipoCtrl.ascx.designer.cs">
+      <DependentUpon>TipoEquipoCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\TipoEventoCtrl.ascx.cs">
+      <DependentUpon>TipoEventoCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\TipoEventoCtrl.ascx.designer.cs">
+      <DependentUpon>TipoEventoCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\UtilizaEECtrl.ascx.cs">
+      <DependentUpon>UtilizaEECtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\UtilizaEECtrl.ascx.designer.cs">
+      <DependentUpon>UtilizaEECtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\EmpleadoPersonaCtrl.ascx.cs">
+      <DependentUpon>EmpleadoPersonaCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\EmpleadoPersonaCtrl.ascx.designer.cs">
+      <DependentUpon>EmpleadoPersonaCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\VerCategoriaComponenteCtrl.ascx.cs">
+      <DependentUpon>VerCategoriaComponenteCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\VerCategoriaComponenteCtrl.ascx.designer.cs">
+      <DependentUpon>VerCategoriaComponenteCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\MainFrame.aspx.cs">
+      <DependentUpon>MainFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassicSample\MainFrame.aspx.designer.cs">
+      <DependentUpon>MainFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOAgenda.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOReserva.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOEvento.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOCargoLaboral.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOCategoriaComponente.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOCliente.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOPersona.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOCobros.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOContrato.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOEmpleado.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOComponentePaquete.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOPaquete.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BODirecciones.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOEquipo.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOTipoEquipo.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOTipoEvento.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOFichaDatos.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOIncluyePC.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOOrdenTrabajo.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOUtilizaEE.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOEmpleadoPersona.cs" />
+    <Compile Include="ClassicSample\StaticBindings\StaticBindings_BOVerCategoriaComponente.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24759</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,73 @@
+
+*******************************************************************
+1.- Gestionar Categoria de Componente
+	agregar boolean
+	buscar boolean
+	modificar boolean
+	getArray2D Object[][]
+	getArray CategoriaComponente[]
+	toString()
+
+2.- Gestionar Componente  de Paquete
+	agregar boolean
+	buscar boolean
+	modificar boolean
+	getArray2D Object[][]
+	getArray ComponentePaquete[]
+	toString()
+
+*******************************************************************
+
+3.- Gestionar Cargo Laboral
+	agregar boolean
+	buscar boolean
+	modificar boolean
+	getArray2D Object[][]
+	getArray ComponentePaquete[]
+	toString()
+
+4.-Gestionar Empleado
+	agregar boolean
+	modificar boolean
+	eliminar boolean
+	buscar boolean
+	getArray2D Object[][]
+	getArray Empleado[]
+	toString()
+
+
+**********************************************************************
+5.- Gestionar Tipo de Evento
+	agregar boolean
+	buscar boolean
+	modificar boolean
+	getArray2D Object[][]
+	getArray TipoEvento[]
+	toString()
+
+6.-Gestionar Cliente
+	agregar boolean
+	buscar boolean
+	modificar boolean
+	eliminar boolean
+	getArray2D Object[][]
+	getArray Cliente[]
+	toString()
+
+**********************************************************************
+7.- Gestionar Tipo de Equipo
+	agregar boolean
+	buscar boolean
+	modificar boolean
+	getArray2D Object[][]
+	getArray TipoEquipo[]
+	toString()
+
+8.-Gestionar Equipo
+	agregar boolean
+	buscar boolean
+	modificar boolean
+	eliminar boolean
+	getArray2D Object[][]
+	getArray Equipo[]
+	toString()

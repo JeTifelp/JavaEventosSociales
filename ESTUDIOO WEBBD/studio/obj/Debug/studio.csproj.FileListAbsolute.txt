@@ -1,0 +1,24 @@
+C:\Users\ELIOD\Desktop\STUDIO\studio\bin\studio.dll
+C:\Users\ELIOD\Desktop\STUDIO\studio\bin\studio.pdb
+C:\Users\ELIOD\Desktop\STUDIO\studio\obj\Debug\studio.dll
+C:\Users\ELIOD\Desktop\STUDIO\studio\obj\Debug\studio.pdb
+C:\Users\admin\Desktop\proyecto web santos\studio\bin\studio.dll
+C:\Users\admin\Desktop\proyecto web santos\studio\bin\studio.pdb
+C:\Users\admin\Desktop\proyecto web santos\studio\obj\Debug\studio.dll
+C:\Users\admin\Desktop\proyecto web santos\studio\obj\Debug\studio.pdb
+C:\Users\admin\Desktop\proyecto web santos\studio\obj\Debug\studio.csprojResolveAssemblyReference.cache
+D:\ESTUDIOO WEBBD\studio\bin\studio.dll
+D:\ESTUDIOO WEBBD\studio\bin\studio.pdb
+D:\ESTUDIOO WEBBD\studio\obj\Debug\studio.csprojResolveAssemblyReference.cache
+D:\ESTUDIOO WEBBD\studio\obj\Debug\studio.dll
+D:\ESTUDIOO WEBBD\studio\obj\Debug\studio.pdb
+C:\Users\Friends\Desktop\ESTUDIOO WEBBD\studio\bin\studio.dll
+C:\Users\Friends\Desktop\ESTUDIOO WEBBD\studio\bin\studio.pdb
+C:\Users\Friends\Desktop\ESTUDIOO WEBBD\studio\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Friends\Desktop\ESTUDIOO WEBBD\studio\obj\Debug\studio.dll
+C:\Users\Friends\Desktop\ESTUDIOO WEBBD\studio\obj\Debug\studio.pdb
+D:\UniversidadNO ELIMINAR\Sistema Informacion\ESTUDIOO WEBBD\studio\bin\studio.dll
+D:\UniversidadNO ELIMINAR\Sistema Informacion\ESTUDIOO WEBBD\studio\bin\studio.pdb
+D:\UniversidadNO ELIMINAR\Sistema Informacion\ESTUDIOO WEBBD\studio\obj\Debug\ResolveAssemblyReference.cache
+D:\UniversidadNO ELIMINAR\Sistema Informacion\ESTUDIOO WEBBD\studio\obj\Debug\studio.dll
+D:\UniversidadNO ELIMINAR\Sistema Informacion\ESTUDIOO WEBBD\studio\obj\Debug\studio.pdb

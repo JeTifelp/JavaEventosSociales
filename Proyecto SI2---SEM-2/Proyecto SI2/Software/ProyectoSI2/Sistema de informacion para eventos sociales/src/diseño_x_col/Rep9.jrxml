@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Rep1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="titulo" class="java.lang.String"/>
+	<parameter name="columna1" class="java.lang.String"/>
+	<parameter name="columna2" class="java.lang.String"/>
+	<parameter name="columna3" class="java.lang.String"/>
+	<parameter name="columna4" class="java.lang.String"/>
+	<parameter name="columna5" class="java.lang.String"/>
+	<parameter name="columna6" class="java.lang.String"/>
+	<parameter name="columna7" class="java.lang.String"/>
+	<parameter name="columna8" class="java.lang.String"/>
+	<parameter name="columna9" class="java.lang.String"/>
+	<parameter name="NomEmp" class="java.lang.String"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="col1" class="java.lang.String"/>
+	<field name="col2" class="java.lang.String"/>
+	<field name="col3" class="java.lang.String"/>
+	<field name="col4" class="java.lang.String"/>
+	<field name="col5" class="java.lang.String"/>
+	<field name="col6" class="java.lang.String"/>
+	<field name="col7" class="java.lang.String"/>
+	<field name="col8" class="java.lang.String"/>
+	<field name="col9" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="94" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="555" height="94"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\temp\\wood.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="91" y="0" width="274" height="56" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="24" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{titulo}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy.MMMMM.dd GGG hh:mm aaa">
+				<reportElement x="336" y="74" width="219" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="445" y="0" width="100" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom"/>
+				<text><![CDATA[Empresa:]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="348" y="20" width="196" height="36" forecolor="#FFFFFF" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Andalus" size="22" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{NomEmp}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="0" width="91" height="56"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\temp\\logo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="19" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="4" y="4" width="32" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="402" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[col9]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="184" splitType="Stretch">
+			<textField>
+				<reportElement x="5" y="11" width="32" height="20"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="41" y="11" width="162" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{col1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="11" width="172" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{col2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="386" y="11" width="168" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{col3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="41" y="66" width="162" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{col4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="66" width="172" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{col5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="208" y="31" width="150" height="20" forecolor="#003399"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{columna2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="387" y="31" width="161" height="20" forecolor="#003399"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{columna3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="41" y="31" width="162" height="20" forecolor="#003399"/>
+				<textElement verticalAlignment="Top">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{columna1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="41" y="86" width="68" height="20" forecolor="#003399"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{columna4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="86" width="103" height="20" forecolor="#003399"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{columna5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="386" y="66" width="168" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{col6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="386" y="86" width="121" height="20" forecolor="#003399"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{columna6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="122" width="158" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{col7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="142" width="158" height="20" forecolor="#003399"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{columna7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="208" y="142" width="114" height="20" forecolor="#003399"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{columna8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="208" y="122" width="171" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{col8}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="45" y="173" width="502" height="2" forecolor="#009999"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double" lineColor="#009999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="41" y="3" width="509" height="2" forecolor="#009999"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double" lineColor="#009999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="387" y="142" width="100" height="20" forecolor="#0033CC"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{columna9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="387" y="122" width="100" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{col9}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="27" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="434" y="34" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="514" y="34" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

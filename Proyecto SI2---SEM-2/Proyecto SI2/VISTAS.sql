@@ -1,0 +1,11 @@
+USE ESTUDIO;
+GO
+
+CREATE VIEW EMPLEADO_PERSONA
+AS
+	SELECT P.CI,P.APellidoP+' '+ISNULL(P.APellidoM,' ')+' '+P.Nombre AS PMN,P.Sexo,P.Telefono,C.Nombre
+	FROM Persona AS P INNER JOIN Empleado AS E ON P.CI = E.CI INNER JOIN
+         CargoLaboral AS C ON E.IdCL = C.Id	
+GO
+
+SELECT * FROM PERSONA P,EMPLEADO E WHERE P.CI=E.CI
